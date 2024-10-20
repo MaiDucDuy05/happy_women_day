@@ -486,10 +486,13 @@
 
     <script>
         const greetingLines = [
-            "Nhân ngày 20/10, em xin gửi đến chị những lời chúc tốt đẹp nhất!",
-            "Chúc chị luôn xinh đẹp, rạng rỡ và tràn đầy năng lượng trong mọi khoảnh khắc của cuộc sống",
-            "Chúc chị luôn hạnh phúc, thành công trong cuộc sống và trong công việc",
-            "Happy 20/10! 🌸"
+           "Nhân ngày 20/10, xin gửi đến cô giáo và các bạn nữ lời chúc tốt đẹp nhất",
+           "Chúc cô luôn mạnh khỏe, hạnh phúc và thành công trên con đường gieo mầm tri thức.",
+           "Mong cô mãi giữ được sự nhiệt huyết và niềm vui trong nghề giáo!",
+           "Chúc các bạn nữ luôn xinh đẹp, rạng rỡ, tự tin và đạt được mọi ước mơ.",
+           "Hãy luôn mạnh mẽ và tỏa sáng, vì các bạn chính là những bông hoa xinh đẹp,",
+           "không chỉ trong ngày đặc biệt này mà trong suốt cuộc đời",
+            " Chúc các bạn có một ngày thật nhiều niềm vui và ý nghĩa! 🌹🎉"
         ];
       const greetingElement = document.getElementById("greeting");
       let lineIndex = 0;
@@ -500,7 +503,7 @@
                 if (charIndex < greetingLines[lineIndex].length) {
                     greetingElement.innerHTML += greetingLines[lineIndex].charAt(charIndex);
                     charIndex++;
-                    setTimeout(typeWriter, 100); // Thay đổi tốc độ gõ chữ ở đây (100ms)
+                    setTimeout(typeWriter, 50); // Thay đổi tốc độ gõ chữ ở đây (100ms)
                 } else {
                     // Đợi một chút trước khi xuống dòng
                     setTimeout(() => {
